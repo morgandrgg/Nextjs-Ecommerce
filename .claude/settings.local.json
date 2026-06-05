@@ -1,0 +1,24 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cp -r shanny-shop/src/assets/images public/shop)",
+      "Bash(rm -f public/shop/index.js)",
+      "Bash(npm install *)",
+      "Bash(npx next *)",
+      "Bash(npm run *)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3000/dashboard/banners)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3000/dashboard/categories)",
+      "Bash(curl -s -o /dev/null -w \"\\\\n%{http_code}\" http://localhost:3000/dashboard/coupons)",
+      "Bash(curl -s -o /dev/null -w \"\\\\n%{http_code}\" http://localhost:3000/dashboard/products)",
+      "Bash(sed -i 's/^import React, { useState } from .react./import { useState } from '\\\\''react'\\\\''/' '/home/swift/Projects/Nextjs-Ecommerce/app/\\(back-office\\)/dashboard/\\(catalogue\\)/banners/new/page.jsx' '/home/swift/Projects/Nextjs-Ecommerce/app/\\(back-office\\)/dashboard/\\(catalogue\\)/coupons/new/page.jsx' '/home/swift/Projects/Nextjs-Ecommerce/app/\\(back-office\\)/dashboard/farmers/new/page.jsx' '/home/swift/Projects/Nextjs-Ecommerce/app/\\(back-office\\)/dashboard/markets/new/page.jsx')",
+      "Bash(sed -i 's/^import React, { useEffect, useState } from .react./import { useEffect, useState } from '\\\\''react'\\\\''/' '/home/swift/Projects/Nextjs-Ecommerce/app/\\(back-office\\)/dashboard/\\(catalogue\\)/products/new/page.jsx')",
+      "Bash(npm show *)",
+      "Bash(node *)",
+      "Bash(grep -v \"^--$\")",
+      "Bash(npm list *)",
+      "Bash(npm --version)",
+      "Bash(python3 -c \"import json,sys; d=json.load\\(sys.stdin\\); pkg=d.get\\('packages',{}\\).get\\('node_modules/lucide-react',{}\\); print\\('lucide-react in lock:', pkg.get\\('version','not found'\\)\\)\")",
+      "Bash(python3 *)"
+    ]
+  }
+}
